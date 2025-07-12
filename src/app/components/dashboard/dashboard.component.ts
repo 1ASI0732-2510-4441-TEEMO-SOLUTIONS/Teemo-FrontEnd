@@ -38,59 +38,7 @@ interface PopularRoute {
     RouteAnimationComponent,
   ],
   template: `
-    <!-- Splash Screen -->
-    <div *ngIf="showSplash" class="splash-screen" [class.hidden]="splashHidden">
-      <div class="splash-content">
-        <div class="splash-logo">
-          <svg width="160" height="160" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Tallo más ancho y menos alto -->
-            <rect x="57" y="75" width="28" height="30" rx="8" fill="#f8fafc"/>
 
-            <!-- Sombrero principal agrandado -->
-            <path d="M25 55C25 30 70 20 70 20C70 20 115 30 115 55C115 80 70 75 70 75C70 75 25 80 25 55Z" fill="#0a6cbc"/>
-
-            <!-- Parte inferior del sombrero -->
-            <ellipse cx="70" cy="60" rx="45" ry="18" fill="#084e88"/>
-
-            <!-- Ojos con animación de brillo estelar -->
-            <g class="starry-eyes">
-              <!-- Ojo izquierdo -->
-              <circle class="eye-base" cx="50" cy="50" r="10" fill="#f8fafc"/>
-              <!-- Destellos ojo izquierdo -->
-              <g class="eye-sparkles">
-                <circle class="sparkle" cx="55" cy="45" r="2" fill="#ffffff"/>
-                <circle class="sparkle" cx="48" cy="53" r="1.5" fill="#ffffff"/>
-                <circle class="sparkle" cx="52" cy="55" r="1" fill="#ffffff"/>
-                <circle class="sparkle" cx="45" cy="48" r="1.2" fill="#ffffff"/>
-              </g>
-
-              <!-- Ojo derecho -->
-              <circle class="eye-base" cx="90" cy="50" r="10" fill="#f8fafc"/>
-              <!-- Destellos ojo derecho -->
-              <g class="eye-sparkles">
-                <circle class="sparkle" cx="95" cy="45" r="2" fill="#ffffff"/>
-                <circle class="sparkle" cx="88" cy="53" r="1.5" fill="#ffffff"/>
-                <circle class="sparkle" cx="92" cy="55" r="1" fill="#ffffff"/>
-                <circle class="sparkle" cx="85" cy="48" r="1.2" fill="#ffffff"/>
-              </g>
-            </g>
-
-            <!-- Pupilas fijas -->
-            <circle cx="50" cy="50" r="4" fill="#0a6cbc"/>
-            <circle cx="90" cy="50" r="4" fill="#0a6cbc"/>
-
-            <!-- Sonrisa -->
-
-            <!-- Manchas más grandes -->
-            <circle cx="40" cy="40" r="8" fill="#f8fafc"/>
-            <circle cx="70" cy="35" r="5" fill="#f8fafc"/>
-            <circle cx="100" cy="40" r="7" fill="#f8fafc"/>
-            <circle cx="60" cy="30" r="4" fill="#f8fafc"/>
-          </svg>
-        </div>
-        <h1>MUSHROOM</h1>
-      </div>
-    </div>
 
     <div *ngIf="!showSplash" class="app-container">
       <!-- Vanta.js background -->
